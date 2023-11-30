@@ -1,0 +1,36 @@
+{
+	"name": "http-suite",
+	"version": "0.0.1",
+	"title": "HTTP-Suite: Streamlined Web Communications\"",
+	"description": "HTTP-Suite is a comprehensive package designed for modern web development, offering a unified approach to HTTP communications. It elegantly combines reactive models, streamlined API requests, and efficient data streaming, providing a one-stop solution for all your web communication needs. Whether it's simple API calls or complex data handling, HTTP-Suite makes it intuitive and efficient. Perfect for developers aiming to enhance their web projects with reliability and ease.",
+	"license": "ISC",
+	"template": "template/template.json",
+	"languages": {
+		"default": "en",
+		"supported": [
+			"en",
+			"es"
+		]
+	},
+	"modules": {
+		"path": "modules"
+	},
+	"deployment": {
+		"distributions": [
+			{
+				"name": "web",
+				"platform": "web",
+				"environment": "development",
+				"ports": {
+					"bundles": 5530
+				}
+			}
+		]
+	},
+	"dependencies": {
+		"@beyond-js/kernel": "~0.1.9",
+		"@beyond-js/local": "~0.1.3",
+		"@beyond-js/reactive": "^1.1.6",
+		"socket.io-client": "^4.5.4"
+	}
+}
